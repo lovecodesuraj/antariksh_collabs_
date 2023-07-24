@@ -1,14 +1,12 @@
 import mongoose from "mongoose";
 
-const gallerySchema=mongoose.Schema({
-   image:{
-    type:String,
-    required:true,
-   },
-   date:String,
-   postedBy:String,
+const imageSchema=mongoose.Schema({
+
+     createdBy:String,
+     picture:String,
+     date:String,
 });
 
-const Gallery=mongoose.model("Gallery",gallerySchema);
+const Image=mongoose.model("Image",imageSchema);
 
-export default Gallery;
+export default Image;
