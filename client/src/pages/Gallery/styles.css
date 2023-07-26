@@ -1,44 +1,175 @@
-.gallery {
-    background: #ddd;
-    border-radius: 20px;
-    padding: 10px;
+.gallery{
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    overflow: auto;
     text-align: center;
+    background-color: black;
+
+}
+
+.gallery_container{
+    min-height: 90%;
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    /* align-items: center; */
+
+
 }
 
-.thumb {
-    margin: 2px;
-    max-width: 95%;
-    display: inline-block;
-    /* for non-flex browsers */
+.gallery-item{
+    height: 250px;
+    /* width: 300px; */
+    /* width:200px; */
+    /* aspect-ratio: 1; */
+    position:relative;
 }
 
-.thumb a {
-    position: relative;
-    display: block;
-    width: 100%;
+.gallery-item .image{
+    width:100%;
     height: 100%;
-    -webkit-filter: grayscale(0.7);
-    filter: grayscale(0.7);
+    overflow: hidden;
 }
 
-.thumb a:hover {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
+.gallery-item .image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition:0.5s ease-in-out;
 }
 
-.thumb img {
-    border-radius: 10px;
-    max-width: 100%;
-    max-height: 150px;
-    vertical-align: bottom;
-    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.4);
+.gallery-item:hover .image img{
+    transform:scale(1.5);
 }
 
-.thumb a:hover img {
-    transition: all .3s ease-in-out;
-    box-shadow: 0 0 6px 4px rgba(100, 250, 0, 0.4);
-    z-index: 20;
+.gallery-item .text{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 27px;
+    pointer-events: none;
+    z-index: 4;
+    transition: 0.3s ease-in-out;
+    -webkit-backdrop-filter:blur(5px) saturate(1.8) ;
+    backdrop-filter: blur(5px) saturate(1.8);
 }
+
+.gallery-item:hover .text{
+    opacity: 1;
+    animation: move-down 0.3s linear;
+    padding: 1em;
+    width: 100%;
+    
+}
+
+.w-1{
+    grid-column: span 3;
+    grid-row: span 6;
+}
+
+.w-2{
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+.w-3{
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.w-4{
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.w-5{
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.w-6{
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.w-7{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.w-8{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.w-9{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.w-10{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+h1{
+    color: aliceblue;
+}
+
+@media screen and (max-width:500px){
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    } 
+    
+}
+
+@keyframes move-down{
+    0%{
+        top:10%;
+    }
+    
+    50%{
+        top:35%;
+    }
+
+    100%{
+        top: 50%;
+    }
+}
+
+.gallery-heading {
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .gallery-heading:before {
+    content: '';
+    display: block;
+    height: 30px;
+    width: 100%;
+    /* background-image: url('cosmic_background.jpg'); Replace with an actual cosmic-themed background image */
+    background-size: cover;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .gallery-heading:after {
+    content: '🌌';
+    font-size: 60px;
+    position: relative;
+    top: -20px;
+    display: block;
+  }
