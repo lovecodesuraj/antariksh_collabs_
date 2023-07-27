@@ -7,8 +7,7 @@ const BlogPost = (props) => {
   const imageAlt = "Image description";
 
   return (
-    <>
-    
+    <>    
     <div className="blog-post">
     <article className="blog-post">
       <h2 className="post-title">Exploring the Wonders of the Cosmos: A Journey into Astronomy
