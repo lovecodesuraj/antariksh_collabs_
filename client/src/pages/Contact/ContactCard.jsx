@@ -1,14 +1,15 @@
 import React from "react";
 import Card from './Card';
-import './ContainCard.css'
+import './ContactCard.css'
+import {Members} from "./Members";
 
 
-const ContainCard = (props) =>{
+const ContainCard = () =>{
     return(
         <div className="mainBody">
-            {props.people.map((e)=>{
+            {Members.map((member)=>{
               return(
-                  <Card name={e.name} post = {e.post} branch = {e.branch} year = {e.year} photo = {e.photo}/>
+                  <Card name={member.name} post = {member.post} branch = {member.branch} year = {member.year} photo = {member.photo}/>
               )
           })}
         </div>

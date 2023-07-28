@@ -1,4 +1,4 @@
-[
+export const Members=[
     {
         "name": "Ritesh Madishetty",
         "post": "Secretary",

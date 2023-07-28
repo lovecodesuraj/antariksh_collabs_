@@ -33,10 +33,19 @@ const Card = (props) =>{
                     <div className="heavenlybody" style={{backgroundImage : `url(${props.gif})`}}></div>
                 </div>
                 <div className="icons">
+                    <a href="https://www.youtube.com/watch?v=LD4eKYSsA2Q">
                     <div className="linkin bring-forward" style={{backgroundColor : iconColor}}></div>
+                    </a>
+                    <a href="">
                     <div className="gmail bring-forward" style={{backgroundColor : iconColor}}></div>
+                    </a>
+                    <a href="">
+
                     <div className="github bring-forward" style={{backgroundColor : iconColor}}></div>
+                    </a>
+                    <a href="">
                     <div className="insta bring-forward" style={{backgroundColor : iconColor}}></div>
+                    </a>
                 </div>
         </div>
         </>
