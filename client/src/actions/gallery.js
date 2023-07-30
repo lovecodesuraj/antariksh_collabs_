@@ -27,9 +27,9 @@ export const fetchGallery=({page})=>async(dispatch)=>{
 export const fetchTotalPageCount=()=>async(dispatch)=>{
     try {
         // dispatch({type:"FETCHING_IMAGES"});
-        const {data}=await api.fetchTotalPageCount();
-        console.log({data});
-        // dispatch({type:"FETCH_TOTAL_PAGE_COUNT",payload:data.images});
+        const {data:{pageCount}}=await api.fetchTotalPageCount();
+        console.log({pageCount});
+        dispatch({type:"FETCH_TOTAL_PAGE_COUNT",payload:pageCount});
         // dispatch({type:"FETCHING_IMAGES_FINISHED"});
     } catch (error) {
         console.log({error});
