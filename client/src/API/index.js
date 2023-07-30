@@ -12,4 +12,4 @@ const API=axios.create({baseURL:"http://localhost:5000"});
 
 //gallery
 export const uploadImages=(data)=>API.post(`/gallery/uploadImages`,data);
-export const fetchGallery=({page})=>API.get(`/gallery/ page=${}`);
+export const fetchGallery=({page})=>API.get(`/gallery/ page=${page}`);
