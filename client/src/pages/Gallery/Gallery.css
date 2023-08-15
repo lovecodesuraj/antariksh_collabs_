@@ -150,7 +150,8 @@ h1{
     display: block;
     height: 30px;
     width: 100%;
-    background-image: url('cosmic_background.jpg'); /* Replace with an actual cosmic-themed background image */
+    /* background-image: url('cosmic_background.jpg');  */
+    /* Replace with an actual cosmic-themed background image */
     background-size: cover;
     opacity: 0.8;
     position: absolute;

@@ -1,4 +1,4 @@
-export default (state = { uploadingImages: false,fetchingImages:false, images: [] }, action) => {
+export default (state = { uploadingImages: false,fetchingImages:false, images: [],totalPageCount:1, }, action) => {
     switch (action.type) {
         case "UPLOADING_IMAGES":
             return { ...state, uploadingImages: true }
@@ -12,6 +12,8 @@ export default (state = { uploadingImages: false,fetchingImages:false, images: [
             return {...state,images:action.payload}
         case "UPLOADING_IMAGES_FINISHED":
             return { ...state, uploadingImages: false }
+        case "FETCH_TOTAL_PAGE_COUNT" :
+            return {...state,totalPageCount:action.payload}
         default:
             return state
     }
