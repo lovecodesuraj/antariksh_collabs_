@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainCard{
+    margin: 20px;
+    width: 220px;
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(135deg ,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0, 0.37);
+    overflow: hidden ;
+    transition: ease-in-out .2s;
+}
+
+.year{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    color: rgb(18, 18, 18);
+    font-family:Tahoma, sans-serif;
+    transform: rotateZ(-45deg);
+    padding: 5px;
+    position: absolute;
+    left: -45px;
+    top: 20px;
+    color: white;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+}
+
+.profilePic{
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    display: inline-block;
+    margin: auto;
+    border: 4px solid ;
+}
+
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.name{
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+}
+
+.post{
+    margin-top: 7px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.branch{
+    margin-top: 5px;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: white;
+}
+
+.heavenlybody{
+    height: 45px;
+    width: 45px;
+}
+.linkin,.gmail,.github,.insta{
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    border: 1px solid white;
+    background-size: cover;
+}
+
+.icons{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.linkin{
+    background-image: url(img/linkedin.png);
+}
+
+.gmail{
+    background-image: url(img/mail.png);
+}
+
+.github{
+    background-image: url(img/githubcat.png);
+}
+
+.insta{
+    background-image: url(img/insta.png);
+}
+
+.bring-forward{
+    transition: ease-in-out .2s;
+}
+
+.bring-forward:hover{
+    transform: translateX(-4px) scale(1.07);
+    box-shadow: 2px 2px 10px black;
+}
+
+.bring-forward:active{
+    transition: none;
+    box-shadow: none;
+}
