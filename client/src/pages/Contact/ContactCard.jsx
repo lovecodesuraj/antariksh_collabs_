@@ -6,7 +6,7 @@ import {Members} from "./Members";
 
 const ContainCard = () =>{
     return(
-        <div className="mainBody">
+        <div className="mainBody page">
             {Members.map((member)=>{
               return(
                   <Card name={member.name} post = {member.post} branch = {member.branch} year = {member.year} photo = {member.photo}/>
