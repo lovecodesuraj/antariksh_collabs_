@@ -1,21 +1,54 @@
-.Home{
-    background-image: url('../../assets/home-bg.png');
-    color: #eee;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: 140%;
-    background-position: center;
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-.landing-heading{
-    padding-left: 30px;
-    padding-top: 80px;
-    font-size: 72px;
-    text-align: left;
-    /* width: 60vw; */
+
+.background{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0,0,0,0.4);
+  z-index: -1;
 }
-.landing-paragraph{
-    padding-left: 30px;
-    text-align: left;
-    font-size: 20px;
-    width: 60vw;
+
+.overlay{
+  z-index: 10;
 }
+
+.backgroundImage{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  background-image: url("./home_background.jpg");
+  background-size: cover;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+

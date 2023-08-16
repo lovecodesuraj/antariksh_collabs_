@@ -5,12 +5,12 @@ import Home from './pages/Home/Home';
 import Blog from './pages/Blogs/Blog';
 import Admin from './pages/Admin/Admin';
 import ContactCard from './pages/Contact/ContactCard';
-import Navbar from './pages/Navbar/Navbar';
+// import Navbar from './pages/Navbar/Navbar';
 
 function App() {
   return (
     <div className='main-container'>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/gallery" exact element={<Gallery />} />

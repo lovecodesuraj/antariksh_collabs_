@@ -1,14 +1,27 @@
-import React from 'react'
-import './Home.css'
+import Header from './Compnents/Header/Header';
+// import Navbar from './Compnents/Navbar/Navbar';
+import Intro from './Compnents/Intro/Intro';
+import News from './Compnents/News/News';
+import Footer from './Compnents/Footer/Footer';
+import './Home.css';
+// import WhatWeDo from './Compnents/WhatWeDo/WhatWeDo';
 
-const Home = () => {
+const Home = ()=> {
   return (
-    <div className='Home page'>
-      <h1 className='landing-heading'>Welcome to Discover <br/> The Cosmos</h1>
-      <p className='landing-paragraph'>Unveil the wonders of the universe with our website. Delve into the mysteries of celestial phenomena, explore the intricacies of distant galaxies, and witness the awe-inspiring beauty of our cosmos
-      </p>
-    </div>
-  )
+    <>
+    <div className='backgroundImage'></div>
+    <div className='background'></div>
+    <div className='overlay'>    
+      <Header/>
+    {/* <Navbar/> */}
+    <Intro/>
+     <News/>
+     <Footer/>
+     </div>
+
+     {/* <WhatWeDo/> */}
+    </>
+  );
 }
 
-export default Home
+export default Home;

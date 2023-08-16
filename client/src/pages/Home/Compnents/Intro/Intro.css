@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Mokoto';
+    src: url('./Mokoto-Demo.ttf');
+}
+
+
+.welcome{
+    margin-top: 100px;
+  }
+  
+  .welcome>h1{
+    font-family: 'Mokoto', sans-serif;
+    background: -webkit-linear-gradient(#ffffff, #020202);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 90px;
+    text-align: center;
+  }
+  
+  #cosmos{
+    background: -webkit-linear-gradient(#020202,#ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .intromsgBox{
+    margin-top: 40px;
+  }
+  
+  .intromsg{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background: -webkit-linear-gradient(#ffffff, #848080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900px;
+    width: 100%;
+  }

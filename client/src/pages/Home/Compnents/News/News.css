@@ -1,0 +1,25 @@
+.news{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.newsBox{
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 30px;
+    color: white;
+    margin: 50px;
+    padding: 20px;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+}
+
+
+.astronaut{
+    width: 20%;
+    height: auto;
+}
