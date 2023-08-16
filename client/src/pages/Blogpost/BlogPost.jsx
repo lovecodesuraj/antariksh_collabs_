@@ -8,7 +8,7 @@ const BlogPost = (props) => {
 
   return (
     <>    
-    <div className="blog-post">
+    <div className="blog-post page">
     <article className="blog-post">
       <h2 className="post-title">Exploring the Wonders of the Cosmos: A Journey into Astronomy
 </h2>

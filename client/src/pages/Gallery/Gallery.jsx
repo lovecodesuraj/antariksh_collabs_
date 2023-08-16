@@ -21,7 +21,7 @@ const Gallery = () => {
     }, [currentPage])
     return (
       <>
-        <h1 class="gallery-heading">Cosmic Captures: A Gallery of Celestial Wonders</h1>
+        <h1 class="gallery-heading page">Cosmic Captures: A Gallery of Celestial Wonders</h1>
         <div className="container">
           {/* <div className="gallery_container"> */}
             {!fetchingImages
