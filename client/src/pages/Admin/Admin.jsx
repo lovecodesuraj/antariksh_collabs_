@@ -12,7 +12,7 @@ const Admin = () => {
     return (
         <>
         <AddImage />
-        <AddAnnouncement />
+        {/* <AddAnnouncement /> */}
      </>
   )
 }

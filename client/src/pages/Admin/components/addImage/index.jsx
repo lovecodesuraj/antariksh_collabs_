@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Button } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { uploadImages } from '../../../../actions/gallery';
-import { MuiFileInput } from 'mui-file-input'
 
 import "./styles.css";
 

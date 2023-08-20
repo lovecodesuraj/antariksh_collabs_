@@ -3,9 +3,9 @@ import Image from "../models/gallery.js";
 
 export const fetchGallery = async (req, res) => {
    const {page}=req.query;
-   // console.log({page})
+   console.log({page})
      try {
-        const perPage=4;
+        const perPage=8;
         const images=await Image.find().skip((page-1)*perPage).limit(perPage);
         res.status(200).json({images});
      } catch (error) {
@@ -29,7 +29,7 @@ export const uploadImages = async (req, res) => {
 export const fetchPageCount=async(req,res)=>{
    try {
       const totalImages=await Image.count();
-      let pageCount=totalImages/4;
+      let pageCount=totalImages/8;
       pageCount=pageCount>1?Math.round(pageCount):1;
       res.status(200).json({pageCount});
    } catch (error) {
