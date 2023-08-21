@@ -1,53 +1,51 @@
 .gallery{
-    width: 80%;
-    height: 90vh;
+    width: 100vw;
+    min-height: 90vh;
     margin: auto;
     overflow: auto;
     text-align: center;
-    background-color: black;
+    background-color:#111333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
 .gallery_container{
-    min-height: 90%;
+    /* min-height: 90vh; */
+    width: 90vw;
     display: flex;
-    padding: 10px;
+    /* padding: 10px; */
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
+    justify-content:center  ;
+    align-items: center;
+}
+
+.gallery_item_image{
+    width: 20vw;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s;
+}
+.gallery_item_image:hover{
+    background-position: center;
+    /* zoom: 1.005; */
+}
+.MuiPagination-text button{
+    color: #fff;
+    /* background-color: grey; */
+}
+.fetching_images{
+    width: 80vw;
+    height: 60vh;
+    display: flex;
     justify-content: center;
-    /* align-items: center; */
-
-
+    align-items: center;
 }
-
-.gallery-item{
-    height: 250px;
-    /* width: 300px; */
-    /* width:200px; */
-    /* aspect-ratio: 1; */
-    position:relative;
-}
-
-.gallery-item .image{
-    width:100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.gallery-item .image img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    object-position: 50% 50%;
-    cursor: pointer;
-    transition:0.5s ease-in-out;
-}
-
-.gallery-item:hover .image img{
-    transform:scale(1.5);
-}
-
-.gallery-item .text{
+/* .gallery-item .text{
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -60,16 +58,16 @@
     transition: 0.3s ease-in-out;
     -webkit-backdrop-filter:blur(5px) saturate(1.8) ;
     backdrop-filter: blur(5px) saturate(1.8);
-}
+} */
 
-.gallery-item:hover .text{
+/* .gallery-item:hover .text{
     opacity: 1;
     animation: move-down 0.3s linear;
     padding: 1em;
     width: 100%;
     
-}
-
+} */
+/* 
 .w-1{
     grid-column: span 3;
     grid-row: span 6;
@@ -118,7 +116,7 @@
 .w-10{
     grid-column: span 2;
     grid-row: span 2;
-}
+} */
 
 h1{
     color: aliceblue;

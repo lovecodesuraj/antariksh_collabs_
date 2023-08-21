@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./styles.css"
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchGallery, fetchTotalPageCount } from '../../actions/gallery';
-import { Pagination } from '@mui/material';
+import { Pagination ,CircularProgress} from '@mui/material';
 
 
 
@@ -25,19 +25,20 @@ const Gallery = () => {
             <div className="gallery_container">
                 {!fetchingImages ?
                     images.map(image => <>
-                        <div className="gallery-container w-1">
+                        <div className="gallery-container">
                             <div className="gallery-item">
-                                <div className="image" style={{backgroundImage:`url("${image.picture})`}}>
-                                    <img src={image.picture} />
+                                <div className="gallery_item_image" style={{ backgroundImage: `url(${image.picture})` }}>
+                                    {/* <img src={image.picture} /> */}
                                 </div>
                                 {/* <div className="text">{image.description}</div> */}
                             </div>
                         </div>
                     </>)
-                    : "fetching"
+                    : <div className="fetching_images"><CircularProgress /></div>
                 }
             </div>
             <Pagination
+                style={{margin:"30px 0"}}
                 count={totalPageCount}
                 color="secondary"
                 page={currentPage}
