@@ -5,7 +5,7 @@ export const fetchGallery = async (req, res) => {
    const {page}=req.query;
    // console.log({page})
      try {
-        const perPage=4;
+        const perPage=10;
         const images=await Image.find().skip((page-1)*perPage).limit(perPage);
         res.status(200).json({images});
      } catch (error) {

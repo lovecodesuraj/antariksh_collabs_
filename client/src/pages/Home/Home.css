@@ -1,0 +1,21 @@
+.Home{
+    background-image: url('../../assets/home-bg.png');
+    color: #eee;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-position: center;
+}
+.landing-heading{
+    padding-left: 30px;
+    padding-top: 80px;
+    font-size: 72px;
+    text-align: left;
+    /* width: 60vw; */
+}
+.landing-paragraph{
+    padding-left: 30px;
+    text-align: left;
+    font-size: 20px;
+    width: 60vw;
+}
