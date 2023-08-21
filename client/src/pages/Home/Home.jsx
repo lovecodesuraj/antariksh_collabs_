@@ -1,8 +1,9 @@
 import React from 'react'
+import "./styles.css"
 
 const Home = () => {
   return (
-    <div>this world shall know the pain</div>
+    <div id="home">Home</div>
   )
 }
 

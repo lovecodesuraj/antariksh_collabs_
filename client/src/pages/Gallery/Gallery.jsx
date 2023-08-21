@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import "./styles.css";
+import "./styles.css"
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchGallery, fetchTotalPageCount } from '../../actions/gallery';
 import { Pagination } from '@mui/material';
@@ -20,7 +20,7 @@ const Gallery = () => {
         dispatch(fetchGallery({ page: currentPage }));
     }, [currentPage])
     return (
-        <>   <div className="gallery">
+        <>   <div className="gallery" id="gallery">
 
             <div className="gallery_container">
                 {!fetchingImages ?

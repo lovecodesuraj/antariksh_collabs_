@@ -1,0 +1,12 @@
+#home{
+  min-height:90vh;
+  width: 100vw;
+  background-color: #111333;
+  /* color: rgb(93,109,118); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
