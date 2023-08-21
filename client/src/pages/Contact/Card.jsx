@@ -32,6 +32,7 @@ const Card = (props) =>{
                     </div>
                     <div className="heavenlybody" style={{backgroundImage : `url(${props.gif})`}}></div>
                 </div>
+           
                 <div className="icons">
                     <a href="https://www.youtube.com/watch?v=LD4eKYSsA2Q">
                     <div className="linkin bring-forward" style={{backgroundColor : iconColor}}></div>
