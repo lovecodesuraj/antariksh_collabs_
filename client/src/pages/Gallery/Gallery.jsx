@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import "./styles.css"
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchGallery, fetchTotalPageCount } from '../../actions/gallery';
-import { Pagination ,CircularProgress} from '@mui/material';
+import { deleteImage, fetchGallery, fetchTotalPageCount } from '../../actions/gallery';
+import { Pagination, CircularProgress, IconButton,Button } from '@mui/material';
+import DeleteIcon from "@mui/icons-material/DeleteOutline"
+// import { Button } from 'react-scroll';
 
 
 
@@ -10,9 +12,12 @@ const Gallery = () => {
     const dispatch = useDispatch();
     const { images, fetchingImages, totalPageCount } = useSelector(state => state.gallery);
     const [currentPage, setCurrentPage] = useState(1);
-
+    const user = localStorage.getItem('user');
     const handleChange = (e, value) => {
         setCurrentPage(value);
+    }
+    const deleteIt=(_id)=>{
+        dispatch(deleteImage({_id}));
     }
 
     useEffect(() => {
@@ -24,21 +29,27 @@ const Gallery = () => {
 
             <div className="gallery_container">
                 {!fetchingImages ?
-                    images.map(image => <>
-                        <div className="gallery-container">
+                    images.map(image => 
+                        <div key={image._id} className="gallery-container">
                             <div className="gallery-item">
                                 <div className="gallery_item_image" style={{ backgroundImage: `url(${image.picture})` }}>
-                                    {/* <img src={image.picture} /> */}
+                                    <Button
+                                     size="small" 
+                                     style={{backgroundColor:"white"}}
+                                     onClick={()=>{dispatch(deleteImage({_id:image._id}))}}
+                                     >
+                                        <DeleteIcon/>
+                                    </Button>
+
                                 </div>
-                                {/* <div className="text">{image.description}</div> */}
                             </div>
                         </div>
-                    </>)
+                    )
                     : <div className="fetching_images"><CircularProgress /></div>
                 }
             </div>
             <Pagination
-                style={{margin:"30px 0"}}
+                style={{ margin: "30px 0" }}
                 count={totalPageCount}
                 color="secondary"
                 page={currentPage}

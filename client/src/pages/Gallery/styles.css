@@ -29,6 +29,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.2s;
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
 .gallery_item_image:hover{
     background-position: center;

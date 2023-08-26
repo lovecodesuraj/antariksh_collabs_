@@ -14,3 +14,4 @@ const API=axios.create({baseURL:"http://localhost:5000"});
 export const uploadImages=(data)=>API.post(`/gallery/uploadImages`,data);
 export const fetchGallery=({page})=>API.get(`/gallery?page=${page}`);
 export const fetchTotalPageCount=()=>API.get(`/gallery/pageCount`);
+export const deleteImage=(data)=>API.delete(`gallery/delete?_id=${data._id}`);

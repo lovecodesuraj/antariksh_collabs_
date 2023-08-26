@@ -37,3 +37,14 @@ export const fetchPageCount=async(req,res)=>{
       res.status(400).json({error});
    }
 }
+
+export const deleteImage = async (req, res) => {
+   const {_id}=req.query;
+   console.log({_id})
+     try {
+        await Image.findByIdAndDelete(_id);
+        res.status(200);
+     } catch (error) {
+        res.status(400).json({error});
+     }
+}
