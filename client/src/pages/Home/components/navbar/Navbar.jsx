@@ -20,7 +20,7 @@ const Navbar = () => {
                 <Link
                     className="navbar_link"
                     activeClass="navbar_link_active"
-                    to="/blogs" spy="true"
+                    to="blogs" spy="true"
                     smooth={true} duration={200}
                     offset={-100}>
                     Blogs

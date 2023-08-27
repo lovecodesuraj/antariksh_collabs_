@@ -5,7 +5,6 @@ const Blogs = () => {
     return (
 
         <div id="blogs">
-
             Blogs
         </div>
 
