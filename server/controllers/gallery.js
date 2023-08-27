@@ -3,7 +3,6 @@ import Image from "../models/gallery.js";
 
 export const fetchGallery = async (req, res) => {
    const {page}=req.query;
-   console.log({page})
      try {
         const perPage=8;
         const images=await Image.find().skip((page-1)*perPage).limit(perPage);
@@ -30,7 +29,7 @@ export const fetchPageCount=async(req,res)=>{
    try {
       const totalImages=await Image.count();
       let pageCount=totalImages/8;
-      pageCount=pageCount>1?Math.round(pageCount):1;
+      pageCount=pageCount>1?Math.ceil(pageCount):1;
       res.status(200).json({pageCount});
    } catch (error) {
       console.log({error});

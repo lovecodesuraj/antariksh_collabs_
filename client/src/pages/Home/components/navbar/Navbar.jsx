@@ -1,13 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,useState } from 'react'
 import { Link } from "react-scroll";
 import "./styles.css";
-import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-    const navigate=useNavigate();
-    useEffect(()=>{
-        
-    },[])
+
     return (
         <div id="navbar">
             <div id="navbar_nav_items">
@@ -18,14 +14,13 @@ const Navbar = () => {
                     to="home" spy="true"
                     smooth={true} duration={200}
                     offset={-100}
-                    
                     >
                     Home
                 </Link>
                 <Link
                     className="navbar_link"
                     activeClass="navbar_link_active"
-                    to="blogs" spy="true"
+                    to="/blogs" spy="true"
                     smooth={true} duration={200}
                     offset={-100}>
                     Blogs

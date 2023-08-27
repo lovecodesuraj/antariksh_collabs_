@@ -3,12 +3,12 @@ import "./styles.css";
 
 const Blogs = () => {
     return (
-        <>
-            <div id="blogs">
 
-Blogs
-            </div>
-        </>
+        <div id="blogs">
+
+            Blogs
+        </div>
+
     )
 }
 
