@@ -2,8 +2,8 @@ import React from 'react';
 import './BlogPost.css';
 import image from './shutterstock_557126443-scaled.jpg';
 
-const BlogPost = (props) => {
-  const { title, date, content } = props; 
+const BlogPost = () => {
+//   const { title, date, content } = props; 
   const imageAlt = "Image description";
 
   return (
@@ -12,7 +12,7 @@ const BlogPost = (props) => {
     <article className="blog-post">
       <h2 className="post-title">Exploring the Wonders of the Cosmos: A Journey into Astronomy
 </h2>
-      <img className="post-title" src={image} alt={imageAlt} height="500" width="1100"/>
+      <img className="post-title" src={image} alt={imageAlt} height="500" width="1000"/>
       <h3>Introduction</h3>
       <p>Welcome to our astronomy page, where we embark on a captivating journey to unravel the mysteries of the cosmos. Astronomy, the study of celestial objects and phenomena beyond Earth's atmosphere, has fascinated humans for millennia. From ancient civilizations gazing at the night sky to modern-day astronomers probing the depths of space, our quest for knowledge about the universe knows no bounds. In this blog, we will delve into the wonders of astronomy, exploring its history, latest discoveries, and the profound questions that drive our curiosity.</p>
       <h3>The Endless Night Sky: A Brief History of Astronomy</h3>
@@ -36,8 +36,6 @@ const BlogPost = (props) => {
 </p1><br/>
       <p1>Keep looking up!</p1>
       <h4>Team Antariksh</h4>
-      {/* <p className="post-meta">Published on {date}</p>
-      <p className="post-content">{content}</p> */}
     </article>
     </div>
     </>
