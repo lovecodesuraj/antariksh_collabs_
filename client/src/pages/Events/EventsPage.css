@@ -1,0 +1,9 @@
+.EventsPage{
+    color: white;
+    overflow: hidden;
+}
+.EventContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

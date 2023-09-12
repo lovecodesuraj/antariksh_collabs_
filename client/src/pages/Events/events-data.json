@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Star Gazing",
+        "shortDescription": "",
+        "description": "Morbi eget convallis turpis. Phasellus laoreet est et scelerisque eleifend. Donec tristique ac nibh nec interdum. Sed varius lectus vel porttitor eleifend. Proin vitae blandit leo, non tincidunt orci. Duis sed eros urna. Nam tincidunt dui ac pulvinar luctus. Proin turpis nisl, venenatis vitae cursus nec, elementum vel lorem. Sed gravida ut felis sed maximus. Vestibulum sit amet justo in nisl porta ullamcorper et ac enim. Etiam ac volutpat ante.",
+        "photoURL": ""
+    },
+    {
+        "name": "Astrohunt",
+        "shortDescription": "",
+        "description": "Suspendisse eu vehicula ligula. Vivamus eu pharetra augue. Integer pulvinar finibus risus, ut venenatis nisi. Pellentesque leo arcu, pellentesque at lacinia ac, vestibulum ac ex. Fusce ultrices eros ut dui cursus, vitae semper neque posuere. Phasellus at imperdiet purus. Donec gravida ipsum nec porttitor venenatis. Pellentesque nunc arcu, tempor non lectus vitae, congue aliquam turpis. Duis interdum augue in orci condimentum, sit amet consequat ante sollicitudin. Nullam et fermentum dolor. Morbi efficitur est lacus, ut varius magna molestie vitae. Curabitur ultricies dui congue quam ullamcorper, vitae vehicula odio pharetra. Sed dui quam, rutrum eu libero vel, elementum vulputate nunc. Ut at sodales metus.",
+        "photoURL": ""
+    },
+    {
+        "name": "Zathura",
+        "shortDescription": "",
+        "description": "Vivamus in diam faucibus, dignissim ligula sit amet, lacinia quam. Duis orci sem, laoreet vitae ante sed, mattis tristique dolor. Ut dictum, enim nec elementum scelerisque, diam ligula ullamcorper enim, et iaculis nisi libero sit amet ligula. Nunc at ligula vel lorem fermentum mattis quis ac nibh. Suspendisse luctus sapien imperdiet viverra dignissim. Quisque in sem sollicitudin, pulvinar sapien non, ullamcorper arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam facilisis vulputate nunc, a suscipit dolor ultricies at.",
+        "photoURL": ""
+    },
+    {
+        "name": "Cosmos Screening",
+        "shortDescription": "",
+        "description": "Nulla lacinia interdum augue vel consectetur. Vivamus aliquet mi finibus, sagittis risus id, posuere nisl. Suspendisse elementum dictum sapien sit amet ullamcorper. Suspendisse porta ullamcorper dictum. Proin sit amet nunc posuere, faucibus turpis in, tincidunt eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eu lectus arcu. Nunc posuere pellentesque lacus.",
+        "photoURL": ""
+    },
+    {
+        "name": "Prakshepan",
+        "shortDescription": "Rocket launcing comptetion, where individuals win by launcing the rocket to highest or farthest point.",
+        "description": "Donec dictum odio eros, vitae fermentum ligula volutpat sit amet. Nullam ullamcorper nibh ac leo convallis, sed dictum mauris vehicula. Mauris placerat id elit vitae molestie. Quisque eu mauris at tellus vestibulum convallis. Suspendisse id sem purus. Cras tempor leo mauris, eget dictum satu doke soji rept weghi felis hendrerit et. Ut placerat, orci dignissim congue pretium, leo elit euismod risus, ut posuere tortor turpis eu eros. Nullam vitae ultrices arcu.",
+        "photoURL": ""
+    }
+]
