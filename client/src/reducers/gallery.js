@@ -14,6 +14,8 @@ export default (state = { uploadingImages: false,fetchingImages:false, images: [
             return { ...state, uploadingImages: false }
         case "FETCH_TOTAL_PAGE_COUNT" :
             return {...state,totalPageCount:action.payload}
+        case "DELETE_SELECTED_IMAGE":
+            return {...state,images:state.images.filter(image=>image._id!=action.payload)}
         default:
             return state
     }

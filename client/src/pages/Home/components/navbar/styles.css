@@ -1,0 +1,35 @@
+#navbar{
+  height: 10vh;
+  width: 100vw;
+  background-color: #08090C;
+  /* background-color: #111444; */
+  color: rgb(150,150,150);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: sticky;
+  top:0;
+  z-index: 1;
+  /* padding: 0 20px 0 20px; */
+  /* display: grid; */
+}
+
+#navbar_logo{
+   /* color: white; */
+}
+#navbar_nav_items{
+    align-self: flex-end;
+    display: flex;
+    gap: 20px;
+    margin: 0 30px;
+
+}
+.navbar_link{
+   font-family: "Roboto";
+   font-size: 22px;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+.navbar_link_active{
+ color: white;
+}

@@ -1,55 +1,63 @@
 import React, { useEffect, useState } from 'react'
-import "./Gallery.css";
+import "./styles.css"
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchGallery, fetchTotalPageCount } from '../../actions/gallery';
-import { Pagination } from '@mui/material';
+import { deleteImage, fetchGallery, fetchTotalPageCount } from '../../actions/gallery';
+import { Pagination, CircularProgress, IconButton, Button } from '@mui/material';
+import DeleteIcon from "@mui/icons-material/DeleteOutline"
+// import { Button } from 'react-scroll';
+import {adminKey} from "../Admin/keys"
 
 
 
 const Gallery = () => {
+    // const pageNo=(new URLSearchParams(window.location.search)).get('page');
     const dispatch = useDispatch();
     const { images, fetchingImages, totalPageCount } = useSelector(state => state.gallery);
     const [currentPage, setCurrentPage] = useState(1);
-
+    const key = localStorage.getItem('key');
     const handleChange = (e, value) => {
         setCurrentPage(value);
+        // window.location.href=`/gallery?page=${currentPage}`
     }
+
 
     useEffect(() => {
         dispatch(fetchTotalPageCount());
         dispatch(fetchGallery({ page: currentPage }));
     }, [currentPage])
     return (
-      <>
-        <h1 class="gallery-heading page">Cosmic Captures: A Gallery of Celestial Wonders</h1>
-        <div className="container">
-          {/* <div className="gallery_container"> */}
-            {!fetchingImages
-              ? images.map((image, idx) => (
-                  <>
-                    <div className={`gallery-container w-${idx+1}`}>
-                      <div className="gallery-item">
-                        <div
-                          className="image"
-                          style={{ backgroundImage: `url("${image.picture})` }}
-                        >
-                          <img src={image.picture} />
+        <div id="gallery">
+            <div className="gallery_container">
+                {!fetchingImages ?
+                    images.map(image =>
+                        <div key={image._id} className="gallery-container">
+                            <div className="gallery-item">
+                                <div className="gallery_item_image" style={{ backgroundImage: `url(${image.picture})` }}>
+                                   { adminKey===key &&
+                                       <Button
+                                       size="small"
+                                       style={{ backgroundColor: "white" }}
+                                       onClick={() => { dispatch(deleteImage({ _id: image._id })) }}
+                                       >
+                                        <DeleteIcon />
+                                    </Button>
+                                    }
+
+                                </div>
+                            </div>
                         </div>
-                        <div className="text">{image.description}</div>
-                      </div>
-                    </div>
-                  </>
-                ))
-              : "fetching"}
-          {/* </div> */}
-          <Pagination
-            count={totalPageCount}
-            color="secondary"
-            page={currentPage}
-            onChange={handleChange}
-          />
+                    )
+                    : <div className="fetching_images"><CircularProgress /></div>
+                }
+            </div>
+            <Pagination
+                style={{ margin: "30px 0" }}
+                count={totalPageCount}
+                color="secondary"
+                page={currentPage}
+                onChange={handleChange}
+            />
         </div>
-      </>
     );
 }
 

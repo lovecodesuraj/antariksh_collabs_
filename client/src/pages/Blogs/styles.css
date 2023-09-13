@@ -1,11 +1,13 @@
-.blog_wrapper{
-    background-color: #36454F;
-    min-width: 100vw;
-    min-height: 100vh;
-    overflow: auto;
-}
-.blog{
+
+#blogs{
     background-color: black;
-    width: 80%;
-    margin: auto;
+    width: 100vw;
+    min-height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin: auto; */
 }
