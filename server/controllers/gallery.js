@@ -1,5 +1,7 @@
-import mongoose from "mongoose";
+import axios from "axios"
 import Image from "../models/gallery.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 export const fetchGallery = async (req, res) => {
    const {page}=req.query;
@@ -47,3 +49,21 @@ export const deleteImage = async (req, res) => {
         res.status(400).json({error});
      }
 }
+
+
+export const saveContactMessage = async (req, res) => {
+   const {name:Name,email:Email,message:Message}=req.body;
+   const data={Name,Email,Message}
+   try {
+      const response=await fetch(process.env.GOOGLE_SPREADSHEET_URL,{
+         method:"POST",
+         body:data
+          });
+      res.status(200);      
+     } catch (error) {
+        res.status(400).json({error});
+     }
+}
+
+
+//https://script.google.com/macros/s/AKfycbwhzJ_oEm_O_pH74lKeuE9XDWCQi2gfTedgWR546L078JVKeBGeN1zJ32LOo6vHJ1-JNg/exec
