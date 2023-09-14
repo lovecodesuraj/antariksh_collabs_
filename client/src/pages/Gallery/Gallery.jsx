@@ -5,7 +5,7 @@ import { deleteImage, fetchGallery, fetchTotalPageCount } from '../../actions/ga
 import { Pagination, CircularProgress, IconButton, Button } from '@mui/material';
 import DeleteIcon from "@mui/icons-material/DeleteOutline"
 // import { Button } from 'react-scroll';
-import {adminKey} from "../Admin/keys"
+// import {adminKey} from "../Admin/keys"
 
 
 
@@ -34,7 +34,7 @@ const Gallery = () => {
                         <div key={image._id} className="gallery-container">
                             <div className="gallery-item">
                                 <div className="gallery_item_image" style={{ backgroundImage: `url(${image.picture})` }}>
-                                   { adminKey===key &&
+                                   { key === "faultedstar" &&
                                        <Button
                                        size="small"
                                        style={{ backgroundColor: "white" }}
