@@ -4,21 +4,46 @@
     color: #eee;
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: cover;
     background-position: center;
     font-family: 'Quantico', sans-serif !important;
-
 }
 .landing-heading{
     padding-left: 30px;
     padding-top: 80px;
     font-size: 72px;
     text-align: left;
-    /* width: 60vw; */
+    width: 80%;
 }
 .landing-paragraph{
     padding-left: 30px;
     text-align: left;
     font-size: 20px;
-    width: 60vw;
+    width: 60%;
+}
+
+@media (max-width: 920px) 
+{
+    .landing-heading {
+        font-size: 65px;
+        width: 90%;
+        text-align: center;
+    }
+  
+    .landing-paragraph {
+        font-size: 18px;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .landing-heading {
+        font-size: 50px;
+    }
+  
+    .landing-paragraph {
+        padding-top: 20px;
+        font-size: 16px;
+    }
 }

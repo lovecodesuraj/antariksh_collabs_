@@ -21,10 +21,43 @@
 
 .EventName {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.8em;
 }
 
 .EventDescription {
     font-style: italic;
 }
   
+@media (max-width: 730px){
+    .Event{
+        width: 200px;
+    }
+    .EventName{
+        font-size: 1.2em;
+    }
+    .EventImageContainer{
+        height: 130px;
+    }
+    .EventDescription{
+        overflow-y: scroll;
+        height: 300px;
+        border-radius: 5px;
+    }
+    .EventDescription::-webkit-scrollbar {
+        display: block;
+        width: 4px; 
+    }
+      
+    .EventDescription::-webkit-scrollbar-thumb {
+        background: white; 
+        border-radius: 10px; 
+        margin-left: 15px;
+        position: absolute;
+        left: 10px;
+    }
+      
+    .EventDescription::-webkit-scrollbar-track {
+        background: #222; 
+        border-radius: 10px;
+    }
+}

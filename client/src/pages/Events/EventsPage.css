@@ -1,6 +1,10 @@
 .EventsPage{
     color: white;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
 }
 .EventContainer{
     display: flex;

@@ -18,14 +18,14 @@ textarea:focus, input:focus{
 
 .main-container{
     position: absolute;
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
 }
 
 #root{
-    background-color: #000;
+    background-color: #111;
 }
 
 .page{
-    padding-top: 60px;
+    /* padding-top: 60px; */
 }

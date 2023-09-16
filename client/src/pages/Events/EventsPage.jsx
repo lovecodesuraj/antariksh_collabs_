@@ -6,7 +6,7 @@ import './EventsPage.css';
 function EventsPage() {
   return (
     <div className='EventsPage page'>
-      <h1>Events</h1>
+      <h1>Events we organise</h1>
       <div className='EventContainer'>
         {eventsData.map((event, index) => (
           // <div key={index} className={`Event ${index % 2 === 0 ? 'Even' : 'Odd'}`}>
