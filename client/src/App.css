@@ -8,6 +8,7 @@ textarea:focus, input:focus{
     margin: 0;
     padding: 0;
     font-family: 'Quantico', sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     /* font-family: 'Nunito', sans-serif; */
 }
 
@@ -17,10 +18,14 @@ textarea:focus, input:focus{
 
 .main-container{
     position: absolute;
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
 }
 
+#root{
+    background-color: #111;
+}
+
 .page{
-    padding-top: 60px;
+    /* padding-top: 60px; */
 }

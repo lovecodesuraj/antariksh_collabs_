@@ -1,11 +1,15 @@
 import React, { useEffect,useState } from 'react'
 import { Link } from "react-scroll";
 import "./styles.css";
+import Antariksh_Logo from '../../../../assets/antariksh-logo.png'
 
 const Navbar = () => {
 
     return (
         <div id="navbar">
+            <div className="navbar-brand">
+                <img src={Antariksh_Logo} alt="Logo" className="logo" />
+            </div>
             <div id="navbar_nav_items">
 
                 <Link
@@ -16,6 +20,14 @@ const Navbar = () => {
                     offset={-100}
                     >
                     Home
+                </Link>
+                <Link
+                    className="navbar_link"
+                    activeClass="navbar_link_active"
+                    to="EventsPage" spy="true"
+                    smooth={true} duration={200}
+                    offset={-100}>
+                    Events
                 </Link>
                 <Link
                     className="navbar_link"
@@ -32,6 +44,14 @@ const Navbar = () => {
                     smooth={true} duration={200}
                     offset={-100}>
                     Gallery
+                </Link>
+                <Link
+                    className="navbar_link"
+                    activeClass="navbar_link_active"
+                    to="about" spy="true"
+                    smooth={true} duration={200}
+                    offset={-100}>
+                    About
                 </Link>
             </div>
         </div>

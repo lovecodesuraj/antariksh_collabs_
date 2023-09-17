@@ -1,4 +1,8 @@
 .mainBody{
     display: flex;
     margin: 10px;
+    overflow-x: scroll;
+    background-image: url('../../assets/home-bg.png');
+    flex-wrap: wrap;
+    background-position: center;
 }

@@ -4,6 +4,10 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Blogs from './pages/Blogs/Blogs';
 import Admin from './pages/Admin/Admin';
+import ContactCard from './pages/Contact/ContactCard';
+import Footer from './pages/Footer/Footer';
+import EventsPage from './pages/Events/EventsPage';
+import About from './pages/About/About';
 import Navbar from './pages/Home/components/navbar/Navbar';
 import { useEffect, useState } from 'react';
 
@@ -17,8 +21,11 @@ function App() {
       </Routes >
       <Navbar />
       <Home />
+      <EventsPage/>
       <Blogs />
       <Gallery />
+      <About/>
+      <Footer/>
     </>
   );
 }
