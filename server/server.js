@@ -29,9 +29,9 @@ app.use(function(req, res, next) {
 //routes
 app.use("/api/gallery",galleryRoutes);
 
-app.use('*',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'../client/build/index.html'));
-})
+// app.get('/',(req,res)=>{
+//     res.sendFile(path.resolve(__dirname,'../client/build/index.html'));
+// })
 
 
 //database connection 

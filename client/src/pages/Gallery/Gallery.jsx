@@ -27,6 +27,7 @@ const Gallery = () => {
     }, [currentPage])
     return (
         <div id="gallery">
+            <h1>Gallery</h1>
             <div className="gallery_container">
                 {!fetchingImages ?
                     images.map(image =>

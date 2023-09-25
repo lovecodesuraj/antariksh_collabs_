@@ -3,7 +3,7 @@ import './About.css';
 import AboutAstronautImage from './../../assets/about-astronaut.svg';
 function About() {
   return (
-    <div className="about page">
+    <div className="about page" id='About'>
       <h1>About Antariksh</h1>
       <div className="about-content">
         <p>

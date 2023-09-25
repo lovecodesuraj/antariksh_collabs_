@@ -14,8 +14,9 @@
 .EventImageContainer {
     width: 100%;
     height: 200px; 
-    background: url('../../../assets/Cosmos-screening.png') center/cover; 
     border-radius: 10px 10px 0 0; 
+    background-size: cover;
+    background-position: center;
     margin-bottom: 10px;
 }
 
@@ -26,6 +27,27 @@
 
 .EventDescription {
     font-style: italic;
+    overflow-y: auto;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.EventDescription::-webkit-scrollbar {
+    display: block;
+    width: 4px; 
+}
+    
+.EventDescription::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 10px; 
+    margin-left: 15px;
+    position: absolute;
+    left: 10px;
+}
+    
+.EventDescription::-webkit-scrollbar-track {
+    background: #222; 
+    border-radius: 10px;
 }
   
 @media (max-width: 730px){
@@ -39,25 +61,6 @@
         height: 130px;
     }
     .EventDescription{
-        overflow-y: scroll;
-        height: 300px;
-        border-radius: 5px;
-    }
-    .EventDescription::-webkit-scrollbar {
-        display: block;
-        width: 4px; 
-    }
-      
-    .EventDescription::-webkit-scrollbar-thumb {
-        background: white; 
-        border-radius: 10px; 
-        margin-left: 15px;
-        position: absolute;
-        left: 10px;
-    }
-      
-    .EventDescription::-webkit-scrollbar-track {
-        background: #222; 
-        border-radius: 10px;
+        height: 250px;
     }
 }

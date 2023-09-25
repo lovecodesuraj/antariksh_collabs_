@@ -8,12 +8,16 @@ import "./styles.css";
 const AddImage = () => {
     const dispatch = useDispatch();
     const [images, setImages] = useState([]);
-
+    const [name, setName] = useState("");
+    const [forGallery, setForGallery] = useState(true);
     const { uploadingImages } = useSelector(state => state.gallery);
 
 
     const handleUpload = () => {
         dispatch(uploadImages(images));
+        setImages([]);
+        setName("");
+        setForGallery(true);
     }
 
     const convertToBase64 = (file) => {
@@ -32,14 +36,21 @@ const AddImage = () => {
     const handleChange = async (e) => {
         const files = e.target.files;
         console.log(files.length)
+        const newImages = [];
         for (var i = 0; i < files.length; i++) {
             const base64 = await convertToBase64(files[i]);
-            // console.log({base64})
-            setImages([...images, { createdBy: "luffy", picture: base64 }]);
+            newImages.push({ createdBy: "admin", picture: base64, name: name, forGallery: forGallery })
         }
+        setImages([...images, newImages]);
     };
 
+    const handleNameChange = async (e)=>{
+        setName(e.target.value);
+    }
 
+    const handleChangeForGallery = async (e)=>{
+        setForGallery(e.target.checked)
+    }
 
     return (
         <>
@@ -59,6 +70,8 @@ const AddImage = () => {
                         hidden
                         onChange={handleChange}
                     />
+                    <input type="text" id='imageName' name='imageName' onChange={handleNameChange}/>
+                    <label htmlFor="forGallery">For Gallery?</label><input type="checkbox" name="forGallery" id="forGallery" onChange={handleChangeForGallery} defaultChecked={true}/>
                     <Button
                         fullWidth
                         color='primary'

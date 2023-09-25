@@ -1,1 +1,1 @@
-export const adminKey = "secret-admin-key";
+export const adminKey = "secret-admin-key-is-very-so-much-secret";

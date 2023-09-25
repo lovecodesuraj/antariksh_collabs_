@@ -1,0 +1,27 @@
+.Members{
+    padding: 20px;
+    background-image: url('../../assets/stars-bg.jpg');
+    overflow: hidden;
+}
+.Members h1{
+    text-align: center;
+}
+.members-container{
+    display: flex;
+    white-space: nowrap;
+    background-position: center;
+    animation: scroll 30s linear infinite;
+    width: 100%;
+    position: relative;
+}
+.members-container:hover{
+    animation-play-state: paused;
+}
+@keyframes scroll {
+    0% {
+      transform: translateX(0%); 
+    }
+    100% {
+        transform: translateX(-2774.63px);
+    }
+}
