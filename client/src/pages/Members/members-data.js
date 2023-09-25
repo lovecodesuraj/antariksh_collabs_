@@ -18,7 +18,7 @@ export const membersData = [
   },
   {
     name: "Nakul Singla",
-    post: "Club-Member",
+    post: "Joint Secretary",
     branch: "ECE",
     year: "Finals",
     photo: "nakul.jpg",
@@ -26,7 +26,7 @@ export const membersData = [
   },
   {
     name: "Shrejal Singh ",
-    post: "Club-Member",
+    post: "Vice President",
     branch: "Civil ",
     year: "Finals",
     photo: "shrejal.jpg",
@@ -34,7 +34,7 @@ export const membersData = [
   },
   {
     name: "Vivek Chaudhary",
-    post: "Social Media Lead",
+    post: "Additional Secretary",
     branch: "PIE",
     year: "Finals",
     photo: "unknown.jpg",
@@ -74,7 +74,7 @@ export const membersData = [
   },
   {
     name: "Nishtha Madaan",
-    post: "Social Media Lead",
+    post: "ML Lead",
     branch: "ME",
     year: "Finals",
     photo: "unknown.jpg",

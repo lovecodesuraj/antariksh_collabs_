@@ -5,9 +5,6 @@
     background-color: black; */
 /* } */
 
-#gallery{
-    background-image: url('../../assets/stars-bg.jpg');
-}
 
 .container{
     display: grid;
