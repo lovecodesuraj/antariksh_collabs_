@@ -1,6 +1,7 @@
 .about {
     /* height: 90vh; */
     background-color: #111;
+    background-image: url('../../assets/stars-bg.jpg');
     color: #fff;
     padding: 30px;
 }

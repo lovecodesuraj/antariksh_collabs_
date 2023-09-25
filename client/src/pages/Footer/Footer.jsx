@@ -28,7 +28,7 @@ function Footer() {
                     <li>
                         <div className="links-heading">Club</div>
                         <ul>
-                            <div className="footer-links"><a href="#">About Us</a></div>
+                            <div className="footer-links"><a href="#About">About Us</a></div>
                             <div className="footer-links"><a href="#">Our Service</a></div>
                             <div className="footer-links"><a href="#">Privacy Policy</a></div>
                         </ul>

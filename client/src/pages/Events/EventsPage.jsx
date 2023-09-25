@@ -10,7 +10,7 @@ function EventsPage() {
       <div className='EventContainer'>
         {eventsData.map((event, index) => (
           // <div key={index} className={`Event ${index % 2 === 0 ? 'Even' : 'Odd'}`}>
-            <Event name={event.name} description={event.description} photo={event.photoURL} />
+            <Event name={event.name} description={event.description} photo={require(`../../assets/${event.photoName}`)} />
           // </div>
         ))}
       </div>

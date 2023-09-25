@@ -1,9 +1,12 @@
-body{
+/* body{
     margin: 20px;
     padding: 0;
     text-align: center;
-    background-color: black;
+    background-color: black; */
+/* } */
 
+#gallery{
+    background-image: url('../../assets/stars-bg.jpg');
 }
 
 .container{

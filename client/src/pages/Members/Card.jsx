@@ -8,8 +8,8 @@ const Card = (props) =>{
     const defaultUrl = "https://i.pinimg.com/originals/b2/e5/c5/b2e5c5c0054c80ee625c2bb172a51bda.jpg";
 
     if (props.year === 'Finals'){
-        bannerColor = 'linear-gradient(rgb(215, 25, 215),rgb(100, 0, 100))';
-        iconColor = 'rgb(134, 0, 134)' ;
+        bannerColor = 'linear-gradient(rgb(55 56 67), rgb(26 27 57))';
+        iconColor = 'rgb(55 56 67)' ;
     }
     else if(props.year === 'Pre-Finals'){
         bannerColor = 'linear-gradient(rgb(237, 124, 143),rgb(203, 63, 86))';
@@ -29,11 +29,8 @@ const Card = (props) =>{
             </div>
             <h2 className="name">{props.name}</h2>
             <div className="info">
-                <div>
-                    <h4 className="post">{props.post}</h4>
-                    <h6 className="branch">{props.branch}</h6>
-                </div>
-                {/* <div className="heavenlybody" style={{backgroundImage : `url(${props.gif})`}}></div> */}
+                <h4 className="branch">{props.branch}</h4>
+                <h4 className="post">{props.post}</h4>
             </div>
             {/* <div className="icons">
                 <a href="https://www.youtube.com/watch?v=LD4eKYSsA2Q">
