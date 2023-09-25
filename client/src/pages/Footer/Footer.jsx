@@ -4,7 +4,8 @@ import Logo from '../../assets/antariksh-logo.png'
 import Instagram from '../../assets/Instagram.svg'
 import Twitter from '../../assets/Twitter.svg'
 import LinkedIn from '../../assets/LinkedIn.svg'
-import Github from '../../assets/Github.svg'
+import Email from '../../assets/Email.svg'
+
 import { Link } from 'react-router-dom'
 function Footer() {
     return (
@@ -19,9 +20,9 @@ function Footer() {
                             <div className="text">Social Media</div>
                             <div className="icons">
                                 <a href="https://www.instagram.com/antariksh_nitkkr/" target="_blank"><img src={Instagram} alt=""/></a>
-                                <a href="https://twitter.com/antariksh_nitkkr" target="_blank"><img src={Twitter} alt=""/></a>
+                                {/* <a href="https://twitter.com/antariksh_nitkkr" target="_blank"><img src={Twitter} alt=""/></a> */}
                                 <a href="https://in.linkedin.com/antariksh_nitkkr" target="_blank"><img src={LinkedIn} alt=""/></a>
-                                <a href="https://github.com/antariksh_nitkkr" target="_blank"><img src={Github} alt=""/></a>
+                                <a href="mailto:antariksh_nitkkr@gmail.com" target="_blank"><img src={Email} alt=""/></a>
                             </div>
                         </div>
                     </li>
@@ -29,24 +30,24 @@ function Footer() {
                         <div className="links-heading">Club</div>
                         <ul>
                             <div className="footer-links"><a href="#About">About Us</a></div>
-                            <div className="footer-links"><a href="#">Our Service</a></div>
-                            <div className="footer-links"><a href="#">Privacy Policy</a></div>
+                            <div className="footer-links"><a href="#EventsPage">Our Events</a></div>
+                            <div className="footer-links"><a href="#Members">Members</a></div>
                         </ul>
                     </li>
                     <li>
                         <div className="links-heading">Get Help</div>
                         <ul>
                             <div className="footer-links"><a href="#">FAQs</a></div>
-                            <div className="footer-links"><a href="#">Antariksh</a></div>
-                            <div className="footer-links"><a href="#">Message</a></div>
+                            <div className="footer-links"><a href="/">Antariksh</a></div>
+                            <div className="footer-links"><a href="mailto:antariksh_nitkkr@gmail.com">Message</a></div>
                         </ul>
                     </li>
                     <li>
                         <div className="links-heading">Others</div>
                         <ul>
+                            <div className="footer-links"><a href="#Gallery">Gallery</a></div>
                             <div className="footer-links"><a href="#">Affiliate Program</a></div>
                             <div className="footer-links"><a href="#">Support Details</a></div>
-                            <div className="footer-links"><a href="#">Members</a></div>
                         </ul>
                     </li>
                 </ul>

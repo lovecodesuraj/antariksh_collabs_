@@ -28,3 +28,17 @@ textarea:focus, input:focus{
 .page{
     /* padding-top: 60px; */
 }
+
+img{
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+::selection{
+    background-color: #11111100;
+    color: rgb(104, 190, 82);
+}

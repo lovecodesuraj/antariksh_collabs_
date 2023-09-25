@@ -5,7 +5,7 @@ import './EventsPage.css';
 
 function EventsPage() {
   return (
-    <div className='EventsPage page'>
+    <div className='EventsPage page' id='EventsPage'>
       <h1>Events we organise</h1>
       <div className='EventContainer'>
         {eventsData.map((event, index) => (
