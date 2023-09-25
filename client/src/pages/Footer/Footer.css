@@ -29,7 +29,8 @@
 }
 .social-medias>.icons{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 60px;
 }
 .footer-row-cont{
     display: flex;

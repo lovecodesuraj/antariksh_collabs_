@@ -6,7 +6,7 @@ import { membersData } from "./members-data";
 
 const Members = () => {
   return (
-    <div className="Members page">
+    <div className="Members page" id="Members">
       <h1>Our Beloved Seniors</h1>
         <div className="members-container">
           {membersData

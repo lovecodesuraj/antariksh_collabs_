@@ -37,7 +37,7 @@ export const membersData = [
     post: "Additional Secretary",
     branch: "PIE",
     year: "Finals",
-    photo: "unknown.jpg",
+    photo: "vivek.jpg",
     gif: "",
   },
   {
@@ -77,7 +77,7 @@ export const membersData = [
     post: "ML Lead",
     branch: "ME",
     year: "Finals",
-    photo: "unknown.jpg",
+    photo: "nishtha.jpg",
     gif: "",
   },
   {
