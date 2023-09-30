@@ -1,0 +1,17 @@
+.EventsPage{
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-image: url('../../assets/Nova_BG/events.jpg');
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+.EventContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

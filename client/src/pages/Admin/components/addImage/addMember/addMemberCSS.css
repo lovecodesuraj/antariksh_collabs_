@@ -1,0 +1,67 @@
+.Member_Wrapper{
+    padding-top: 30px;
+    /* border-radius: 10px; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.addImage{
+    background-color: #f7fff7;
+	width: 420px;
+	padding: 30px 60px;
+	border-radius: 40px;
+	/* display: flex; */
+   	/* align-items: center; */
+   	/* justify-content: center; */
+	flex-direction: column;
+    gap: 10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px;
+}
+
+.InputBox{
+    /* background-color:rgba(0,0,0,0.1); */
+    width:100%;
+    height:30px;
+    display:flex;
+    /* justify-content:center;
+    align-items:center; */
+    font-family:"Roboto";
+    font-size: 1.15rem;
+    padding: 5px;
+}
+
+.LinkImage{
+    border: 2px solid white;
+}
+
+.BranchSelection{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(216, 214, 214);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.BranchSelection > *{
+    margin: 10px;
+    padding: 5px;
+}
+
+.BranchSelection label{
+    margin-left: 3px;
+    font-size: 1.2rem;
+}
+
+.BranchSelection h1{
+    width: 100%;
+    color: black;
+}
+
+.emailBox{
+    display: flex;
+    padding: 0;
+}
