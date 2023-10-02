@@ -131,7 +131,19 @@ h1{
 @media screen and (max-width:500px){
     .container{
         grid-template-columns: repeat(2,1fr);
+        
     } 
+    .gallery_container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .gallery_item_image{
+        width: 225px;
+        margin: 1rem;
+        border-radius: 0.1rem;
+    }
     
 }
 
