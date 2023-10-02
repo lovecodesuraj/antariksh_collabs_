@@ -179,6 +179,11 @@ a {
     .home {
         height: 100vh;
     }
+
+    .Home::before {
+        display: none;
+    }
+
     .landing-heading {
         font-size: 65px;
         width: 90%;
@@ -197,10 +202,11 @@ a {
 }
 
 @media (max-width: 600px) {
-    
+
     .home {
         height: 100vh;
     }
+
     .Home::before {
         display: none;
     }
