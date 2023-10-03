@@ -2,14 +2,14 @@ import axios from "axios";
 
 // const API=axios.create({baseURL:"https://medverseserver.onrender.com"});
 const API=axios.create({baseURL:"https://antariksh-server-7z3o.onrender.com"});
-// const API=axios.create({baseURL:"/"});
+// const API=axios.create({baseURL:"http://localhost:5000"});
 
-// API.interceptors.request.use((req)=>{
-//     if(localStorage.getItem('profile')){
-//         req.headers.authorization= `Bearer ${JSON.parse(localStorage.getItem('profile')).token}`
-//     }
-//     return req;
-// })
+API.interceptors.request.use((req)=>{
+    if(localStorage.getItem('key')){
+        req.headers.authorization= `${localStorage.getItem('key')}`
+    }
+    return req;
+})
 
 //gallery
 export const uploadImages=(data)=>API.post(`/api/gallery/uploadImages`,data);

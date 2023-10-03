@@ -1,9 +1,11 @@
 import React from 'react';
 import './About.css';
 import AboutAstronautImage from './../../assets/about-astronaut.svg';
+import AnimatedBackground from '../Home/AnimatedBackground';
 function About() {
   return (
     <div className="about page" id='About'>
+      <AnimatedBackground/>
       <h1>About Antariksh</h1>
       <div className="about-content">
         <p>

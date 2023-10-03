@@ -14,7 +14,7 @@ function Footer() {
                 <ul className="footer-row-cont">
                     <li>
                         <div className="footer-logo">
-                            <a href="#" target="_blank"><img className="icon" src={Logo} alt=""/></a>
+                            <a href="/" target="_blank"><img className="icon" src={Logo} alt=""/></a>
                         </div>
                         <div className="social-medias">
                             <div className="text">Social Media</div>

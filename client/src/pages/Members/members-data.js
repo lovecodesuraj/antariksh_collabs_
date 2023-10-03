@@ -2,16 +2,23 @@ export const membersData = [
   {
     name: "Nittin Madgotara",
     post: "President",
-    branch: "EE",
+    branch: "Electrical Engg.",
     year: "Finals",
     photo: "nittin.jpg",
     gif: "",
   },
-
+  {
+    name: "Shrejal Singh ",
+    post: "Vice President",
+    branch: "Civil Engg.",
+    year: "Finals",
+    photo: "shrejal.jpg",
+    gif: "",
+  },
   {
     name: "Ritesh Madishetty",
     post: "Secretary",
-    branch: "ECE",
+    branch: "Electronics & Comm. Engg.",
     year: "Finals",
     photo: "ritesh.jpg",
     gif: "",
@@ -19,23 +26,15 @@ export const membersData = [
   {
     name: "Nakul Singla",
     post: "Joint Secretary",
-    branch: "ECE",
+    branch: "Electronics & Comm. Engg.",
     year: "Finals",
     photo: "nakul.jpg",
     gif: "",
   },
   {
-    name: "Shrejal Singh ",
-    post: "Vice President",
-    branch: "Civil ",
-    year: "Finals",
-    photo: "shrejal.jpg",
-    gif: "",
-  },
-  {
     name: "Vivek Chaudhary",
     post: "Additional Secretary",
-    branch: "PIE",
+    branch: "Prod. & Industrial Engg.",
     year: "Finals",
     photo: "vivek.jpg",
     gif: "",
@@ -43,7 +42,7 @@ export const membersData = [
   {
     name: "Adityabhan Singh",
     post: "Web Lead",
-    branch: "IT",
+    branch: "Information Tech.",
     year: "Finals",
     photo: "adityabhan.jpg",
     gif: "",
@@ -51,7 +50,7 @@ export const membersData = [
   {
     name: "Suraj ",
     post: "Web Lead",
-    branch: "PIE",
+    branch: "Prod. & Industrial Engg.",
     year: "Finals",
     photo: "unknown.jpg",
     gif: "",
@@ -59,7 +58,7 @@ export const membersData = [
   {
     name: "Kapil Singh",
     post: "Sponsi Lead",
-    branch: "PIE",
+    branch: "Prod. & Industrial Engg.",
     year: "Finals",
     photo: "unknown.jpg",
     gif: "",
@@ -67,7 +66,7 @@ export const membersData = [
   {
     name: "Chaitanya Rustagi ",
     post: "Sponsi Lead",
-    branch: "PIE",
+    branch: "Prod. & Industrial Engg.",
     year: "Finals",
     photo: "chaitanya.jpg",
     gif: "",
@@ -75,7 +74,7 @@ export const membersData = [
   {
     name: "Nishtha Madaan",
     post: "ML Lead",
-    branch: "ME",
+    branch: "Mechincal Engg.",
     year: "Finals",
     photo: "nishtha.jpg",
     gif: "",
@@ -83,7 +82,7 @@ export const membersData = [
   {
     name: "Deepak ",
     post: "Club-Member",
-    branch: "IT",
+    branch: "Information Tech.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -91,7 +90,7 @@ export const membersData = [
   {
     name: "Vitthal Gupta",
     post: "Club-Member",
-    branch: "CSE",
+    branch: "Computer Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -99,7 +98,7 @@ export const membersData = [
   {
     name: "Priya",
     post: "Club-Member",
-    branch: "EE",
+    branch: "Electrical Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -107,7 +106,7 @@ export const membersData = [
   {
     name: "Arjit Kedia",
     post: "Club-Member",
-    branch: "CSE",
+    branch: "Computer Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -115,7 +114,7 @@ export const membersData = [
   {
     name: "Satyaprakash",
     post: "Club-Member",
-    branch: "PIE",
+    branch: "Prod. & Industrial Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -123,7 +122,7 @@ export const membersData = [
   {
     name: "Mayank",
     post: "Club-Member",
-    branch: "CSE",
+    branch: "Computer Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -131,7 +130,7 @@ export const membersData = [
   {
     name: "Rudransh",
     post: "Club-Member",
-    branch: "ME",
+    branch: "Mechincal Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -139,7 +138,7 @@ export const membersData = [
   {
     name: "Khushi Yadav",
     post: "Club-Member",
-    branch: "ME",
+    branch: "Mechincal Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -147,7 +146,7 @@ export const membersData = [
   {
     name: "Aditya Bhardwaj",
     post: "Club-Member",
-    branch: "IT",
+    branch: "Information Tech.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -155,7 +154,7 @@ export const membersData = [
   {
     name: "Ujjwal Gupta",
     post: "Club-Member",
-    branch: "ME",
+    branch: "Mechincal Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -163,7 +162,7 @@ export const membersData = [
   {
     name: "Jagriti Singh",
     post: "Club-Member",
-    branch: "ME",
+    branch: "Mechincal Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -171,7 +170,7 @@ export const membersData = [
   {
     name: "Hitesh",
     post: "Club-Member",
-    branch: "CSE",
+    branch: "Computer Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -179,7 +178,7 @@ export const membersData = [
   {
     name: "Kamakshi Sharma",
     post: "Club-Member",
-    branch: "PIE",
+    branch: "Prod. & Industrial Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -187,7 +186,7 @@ export const membersData = [
   {
     name: "Suyash Ranjan",
     post: "Club-Member",
-    branch: "PIE",
+    branch: "Prod. & Industrial Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -195,7 +194,7 @@ export const membersData = [
   {
     name: "Riddhi Chauhan",
     post: "Club-Member",
-    branch: "ECE",
+    branch: "Electronics & Comm. Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -203,7 +202,7 @@ export const membersData = [
   {
     name: "Mohit Gupta",
     post: "Club-Member",
-    branch: "PIE",
+    branch: "Prod. & Industrial Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -211,7 +210,7 @@ export const membersData = [
   {
     name: "Rajeev",
     post: "Club-Member",
-    branch: "ME",
+    branch: "Mechincal Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -219,7 +218,7 @@ export const membersData = [
   {
     name: "Manish Soni",
     post: "Club-Member",
-    branch: "ME",
+    branch: "Mechincal Engg.",
     year: "Pre-Finals",
     photo: "",
     gif: "",
@@ -244,7 +243,7 @@ export const membersData = [
   {
     name: "Neelesh Gupta",
     post: "Club-Member",
-    branch: "EE",
+    branch: "Electrical Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -252,7 +251,7 @@ export const membersData = [
   {
     name: "Rahul Saini",
     post: "Club-Member",
-    branch: "PIE",
+    branch: "Prod. & Industrial Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -260,7 +259,7 @@ export const membersData = [
   {
     name: "Jiya Agrawal",
     post: "Club-Member",
-    branch: "EE",
+    branch: "Electrical Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -268,7 +267,7 @@ export const membersData = [
   {
     name: "Diksha dutta",
     post: "Club-Member",
-    branch: "IT",
+    branch: "Information Tech.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -276,7 +275,7 @@ export const membersData = [
   {
     name: "Bhavya Arya",
     post: "Club-Member",
-    branch: "IT",
+    branch: "Information Tech.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -284,7 +283,7 @@ export const membersData = [
   {
     name: "Mansi Sarkar",
     post: "Club-Member",
-    branch: "IT",
+    branch: "Information Tech.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -292,7 +291,7 @@ export const membersData = [
   {
     name: "suvigya",
     post: "Club-Member",
-    branch: "CE",
+    branch: "Civil Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -300,7 +299,7 @@ export const membersData = [
   {
     name: "Damini",
     post: "Club-Member",
-    branch: "IT",
+    branch: "Information Tech.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -308,7 +307,7 @@ export const membersData = [
   {
     name: "Chamanlal yadav",
     post: "Club-Member",
-    branch: "CE",
+    branch: "Civil Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -316,7 +315,7 @@ export const membersData = [
   {
     name: "Deepak Saini",
     post: "Club-Member",
-    branch: "CE",
+    branch: "Civil Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -324,7 +323,7 @@ export const membersData = [
   {
     name: "Aditya Aryan",
     post: "Club-Member",
-    branch: "IT",
+    branch: "Information Tech.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -332,7 +331,7 @@ export const membersData = [
   {
     name: "Udita Saini",
     post: "Club-Member",
-    branch: "EE",
+    branch: "Electrical Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -340,7 +339,7 @@ export const membersData = [
   {
     name: "Sarvagya Agrawal",
     post: "Club-Member",
-    branch: "EE",
+    branch: "Electrical Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -348,7 +347,7 @@ export const membersData = [
   {
     name: "Harsh Taneja",
     post: "Club-Member",
-    branch: "IT",
+    branch: "Information Tech.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -356,7 +355,7 @@ export const membersData = [
   {
     name: "samarth parkhe",
     post: "Club-Member",
-    branch: "ME",
+    branch: "Mechincal Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -364,7 +363,7 @@ export const membersData = [
   {
     name: "Harshit",
     post: "Club-Member",
-    branch: "ME",
+    branch: "Mechincal Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -372,7 +371,7 @@ export const membersData = [
   {
     name: "Ujjawal Gupta",
     post: "Club-Member",
-    branch: "ECE",
+    branch: "Electronics & Comm. Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -380,7 +379,7 @@ export const membersData = [
   {
     name: "Sheersh Verma",
     post: "Club-Member",
-    branch: "ECE",
+    branch: "Electronics & Comm. Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -388,7 +387,7 @@ export const membersData = [
   {
     name: "Kartik Saraswat",
     post: "Club-Member",
-    branch: "CSE",
+    branch: "Computer Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",
@@ -396,7 +395,7 @@ export const membersData = [
   {
     name: "Hutashan Sharma",
     post: "Club-Member",
-    branch: "CSE",
+    branch: "Computer Engg.",
     year: "Sophomores",
     photo: "",
     gif: "",

@@ -1,11 +1,10 @@
 .about {
     /* height: 90vh; */
-    background-color: #111;
-    background-image: url('../../assets/stars-bg.jpg');
+    /* background-color: #111; */
     color: #fff;
     padding: 30px;
 }
-  
+
 .about h1 {
     font-size: 36px;
     /* color: #0071bc;  */
@@ -13,7 +12,7 @@
     margin-bottom: 20px;
 }
 
-.about-content{
+.about-content {
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -24,30 +23,46 @@
     line-height: 1.5;
     text-align: justify;
 }
-  
+
 .about-content p span {
-    color: #0071bc; 
+    color: #0071bc;
     font-weight: bold;
 }
-  
-.aboutImage{
-    width: 30%;
+
+.aboutImage {
+    width: 25%;
+    animation: float 5s infinite;
+    top: 0;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 @media screen and (max-width: 1250px) {
-    .about-content p{
+    .about-content p {
         font-size: 21px;
     }
-    .aboutImage{
+
+    .aboutImage {
         width: 35%;
     }
 }
 
 @media screen and (max-width: 730px) {
-    .about-content p{
+    .about-content p {
         font-size: 18px;
     }
-    .aboutImage{
+
+    .aboutImage {
         display: none;
     }
 }

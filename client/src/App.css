@@ -22,7 +22,7 @@ textarea:focus, input:focus{
 }
 
 #root{
-    background-color: #111;
+    /* background-color: #111; */
 }
 
 .page{
@@ -40,5 +40,5 @@ img{
 
 ::selection{
     background-color: #11111100;
-    color: rgb(104, 190, 82);
+    color: rgb(234 120 57);
 }
