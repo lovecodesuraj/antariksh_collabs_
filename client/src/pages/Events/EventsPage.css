@@ -5,7 +5,10 @@
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    background-image: url('../../assets/stars-bg.jpg');
+    background-image: url('../../assets/events-bg.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
 }
 .EventContainer{
     display: flex;

@@ -1,66 +1,76 @@
-#navbar{
+#navbar {
   height: 10vh;
-  background-color: #08090C;
-  /* background-color: #111444; */
-  color: rgb(150,150,150);
+  background: linear-gradient(90deg, #08090C, #111444);
+  color: rgb(150, 150, 150);
   display: flex;
   justify-content: space-between;
-  /* flex-direction: column; */
   align-items: center;
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 10;
-  /* padding: 0 20px 0 20px; */
-  /* display: grid; */
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
 }
-.navbar-brand{
-   display: flex;
+
+.navbar-brand {
+  display: flex;
 }
-.navbar-brand img{
-   /* color: white; */
-   width: 150px;
-   margin: auto 30px;
+
+.navbar-brand img {
+  /* color: white; */
+  width: 150px;
+  margin: auto 30px;
 }
-#navbar_nav_items{
-    /* align-self: center; */
-    display: flex;
-    gap: 20px;
-    margin: 0 30px;
+
+#navbar_nav_items {
+  /* align-self: center; */
+  display: flex;
+  gap: 20px;
+  margin: 0 30px;
 
 }
-.navbar_link{
-   font-family: "Roboto";
-   font-size: 22px;
-   text-transform: uppercase;
-   cursor: pointer;
+
+.navbar_link {
+  font-family: "Roboto";
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
-.navbar_link_active{
- color: white;
+
+.navbar_link:hover {
+  /* text-decoration: underline; */
+}
+
+.navbar_link_active {
+  color: white;
 }
 
 @media (max-width: 768px) {
-   #navbar {
-     height: auto;
-     flex-direction: column;
-     align-items: center;
-     padding: 10px;
-   }
- 
-   .navbar-brand {
-     margin-bottom: 20px; 
-   }
- 
-   .navbar-brand img {
-     width: 120px; 
-     margin: 0; 
-   }
- 
-   #navbar_nav_items {
-     margin: 0; 
-     gap: 20px;
-   }
- 
-   .navbar_link {
-     font-size: 16px; 
-   }
- }
+  #navbar {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-brand {
+    margin-bottom: 20px;
+  }
+
+  .navbar-brand img {
+    width: 120px;
+    margin: 0;
+  }
+
+  #navbar_nav_items {
+    margin: 0;
+    gap: 20px;
+  }
+
+  .navbar_link {
+    font-size: 16px;
+  }
+}

@@ -14,7 +14,7 @@ function Footer() {
                 <ul className="footer-row-cont">
                     <li>
                         <div className="footer-logo">
-                            <a href="#" target="_blank"><img className="icon" src={Logo} alt=""/></a>
+                            <a href="/" target="_blank"><img className="icon" src={Logo} alt=""/></a>
                         </div>
                         <div className="social-medias">
                             <div className="text">Social Media</div>
@@ -22,7 +22,7 @@ function Footer() {
                                 <a href="https://www.instagram.com/antariksh_nitkkr/" target="_blank"><img src={Instagram} alt=""/></a>
                                 {/* <a href="https://twitter.com/antariksh_nitkkr" target="_blank"><img src={Twitter} alt=""/></a> */}
                                 <a href="https://in.linkedin.com/antariksh_nitkkr" target="_blank"><img src={LinkedIn} alt=""/></a>
-                                <a href="mailto:antarikshnitkkr@gmail.com" target="_blank"><img src={Email} alt=""/></a>
+                                <a href="mailto:antariksh_nitkkr@gmail.com" target="_blank"><img src={Email} alt=""/></a>
                             </div>
                         </div>
                     </li>
@@ -39,7 +39,7 @@ function Footer() {
                         <ul>
                             <div className="footer-links"><a href="#">FAQs</a></div>
                             <div className="footer-links"><a href="/">Antariksh</a></div>
-                            <div className="footer-links"><a href="mailto:antarikshnitkkr@gmail.com">Message</a></div>
+                            <div className="footer-links"><a href="mailto:antariksh_nitkkr@gmail.com">Message</a></div>
                         </ul>
                     </li>
                     <li>

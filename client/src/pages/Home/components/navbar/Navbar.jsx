@@ -8,7 +8,9 @@ const Navbar = () => {
     return (
         <div id="navbar">
             <div className="navbar-brand">
+                <a href='/'>
                 <img src={Antariksh_Logo} alt="Logo" className="logo" />
+                </a>
             </div>
             <div id="navbar_nav_items">
 
