@@ -17,7 +17,7 @@ const Admin = () => {
     <>
         {key==adminKey 
         ?<AddImage />
-        :""
+        :``
         }
     </>
     

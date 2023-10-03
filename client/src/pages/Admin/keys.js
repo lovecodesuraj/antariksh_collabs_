@@ -1,1 +1,1 @@
-export const adminKey = "secret-admin-key-is-very-so-much-secret";
+export const adminKey = process.env.REACT_APP_ADMIN_KEY;
