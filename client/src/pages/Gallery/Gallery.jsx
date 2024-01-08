@@ -5,7 +5,7 @@ import { deleteImage, fetchGallery, fetchTotalPageCount } from '../../actions/ga
 import { Pagination, CircularProgress, IconButton, Button } from '@mui/material';
 import DeleteIcon from "@mui/icons-material/DeleteOutline"
 // import { Button } from 'react-scroll';
-import {adminKey} from "../Admin/keys"
+// import {adminKey} from "../Admin/keys"
 
 
 
@@ -27,14 +27,18 @@ const Gallery = () => {
     }, [currentPage])
     return (
         <div id="gallery">
+<<<<<<< HEAD
             <h1>Gallery</h1>
+=======
+            
+>>>>>>> 350daabe1eea233f6a400f3dbe28097c07bb7ae5
             <div className="gallery_container">
                 {!fetchingImages ?
                     images.map(image =>
                         <div key={image._id} className="gallery-container">
                             <div className="gallery-item">
                                 <div className="gallery_item_image" style={{ backgroundImage: `url(${image.picture})` }}>
-                                   { adminKey===key &&
+                                   { key === "faultedstar" &&
                                        <Button
                                        size="small"
                                        style={{ backgroundColor: "white" }}

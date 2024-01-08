@@ -12,16 +12,26 @@ import Navbar from './pages/Home/components/navbar/Navbar';
 import NewsBox from './pages/News/News-Box';
 // import { useEffect, useState } from 'react';
 import './fonts/fonts.css'
+import Contact from './pages/Contact/Contact';
+import { useEffect, useState } from 'react';
+import Header from './components/header/header';
+import Footer from './components/Footer/Footer';
+import Activities from './pages/Activities/Activities';
 
+
+import {blogs} from "./public/data/blogs";
+import {highlights} from "./public/data/highlights";
 function App() {
 
 
+  
   return (
     <>
       <Routes>
         <Route path="/admin" exact element={<Admin />} />
       </Routes >
-      <Navbar />
+      {/* <Navbar /> */}
+      <Header />
       <Home />
       <EventsPage />
       <Members />
@@ -29,6 +39,10 @@ function App() {
       {/* <NewsBox/> */}
       <Gallery />
       <About />
+      <Activities highlights={highlights}/>
+      <Blogs blogs={blogs}/>
+      <Gallery />
+      <Contact />
       <Footer />
     </>
   );

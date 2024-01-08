@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 .Home {
     /* background-image: url("https://media.istockphoto.com/id/980240760/photo/stars-at-night.webp?b=1&s=170667a&w=0&k=20&c=vM0wIyL1XINCyCKrIYOj9sIaAB9FhYEINTmfDisqYhs="); */
     /* z-index: -2; */
+=======
+.Home{
+    background-image: url('../../assets/home-bg.png');
+    background-attachment: fixed;
+>>>>>>> 350daabe1eea233f6a400f3dbe28097c07bb7ae5
     color: #eee;
     height: 100vh;
     background-repeat: no-repeat;

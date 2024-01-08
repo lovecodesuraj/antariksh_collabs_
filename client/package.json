@@ -12,15 +12,25 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "base-64": "^1.0.0",
+    "bootstrap": "^5.3.1",
     "mui-file-input": "^2.0.4",
+    "postcss": "^8.4.29",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-redux": "^8.1.1",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
+<<<<<<< HEAD
+=======
+    "react-slick": "^0.29.0",
+    "reactstrap": "^9.2.0",
+>>>>>>> 350daabe1eea233f6a400f3dbe28097c07bb7ae5
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
+    "tailwindcss": "^3.3.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
