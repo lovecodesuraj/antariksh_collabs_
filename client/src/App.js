@@ -12,6 +12,8 @@ import Navbar from './pages/Home/components/navbar/Navbar';
 import NewsBox from './pages/News/News-Box';
 // import { useEffect, useState } from 'react';
 import './fonts/fonts.css'
+import Newsletter from './pages/Newsletter/Newsletter';
+// import Newsletter from './pages/Newsletter/Newsletter.jsx';
 
 function App() {
 
@@ -20,16 +22,29 @@ function App() {
     <>
       <Routes>
         <Route path="/admin" exact element={<Admin />} />
+        <Route path="/newsletter" exact element={<Newsletter />} />
+
+        <Route path="/" exact element={
+
+          <>
+            <Navbar />
+            <Home />
+            <EventsPage />
+            <Members />
+            {/* <Blogs /> */}
+            {/* <NewsBox/> */}
+            <Gallery />
+            <About />
+            <Footer />
+          </>}
+
+
+        />
       </Routes >
-      <Navbar />
-      <Home />
-      <EventsPage />
-      <Members />
-      {/* <Blogs /> */}
-      {/* <NewsBox/> */}
-      <Gallery />
-      <About />
-      <Footer />
+
+      {/* <Newsletter/> */}
+
+
     </>
   );
 }

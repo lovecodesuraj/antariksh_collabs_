@@ -1,0 +1,57 @@
+.name_time {
+  color: #b2b2b2;
+}
+
+.name{
+  font-weight: bolder;
+  cursor: pointer;
+  margin-right: 0.8rem;
+  font-size: 1rem;
+}
+
+.time{
+  font-size: 0.7rem;
+  margin-top: 0.3rem;
+}
+
+li p {
+  margin-bottom: 0.75rem;
+}
+
+.commentBody{
+  overflow-wrap: anywhere;
+}
+
+li{
+  list-style-type: none;
+}
+
+p {
+  font-weight: 500;
+  display: flex;
+}
+
+p i:not(:first-child){
+  padding-left: 2rem;
+}
+
+
+.replies{
+  padding-left: 2rem;
+}
+
+
+.commentReply{
+  font-size: 0.8rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.commentReply:hover{
+  text-decoration: underline;
+}
+
+.number{
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}

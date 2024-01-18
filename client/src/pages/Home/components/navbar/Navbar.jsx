@@ -23,6 +23,7 @@ const Navbar = () => {
                     >
                     Home
                 </Link>
+
                 <Link
                     className="navbar_link"
                     activeClass="navbar_link_active"

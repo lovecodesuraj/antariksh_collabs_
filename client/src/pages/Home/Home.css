@@ -65,7 +65,7 @@
     /* fill: royalblue; */
 }
 
-a {
+a, Link {
     text-decoration: none; 
     color: inherit;
     outline: none;
@@ -78,7 +78,7 @@ a {
     align-items: center;
 }
 
-.landing-buttons a {
+.landing-buttons a, .landing-buttons Link {
     width: 200px;
     padding: 20px;
     font-size: 16px;
