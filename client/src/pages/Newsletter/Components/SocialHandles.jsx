@@ -37,7 +37,7 @@ function SocialHandles({currentUser}) {
       <div className={Styles.logos}>
       <img className={Styles.logo} src={likeButton} alt="like button" onClick={onClickLike}/>         
       <img className={Styles.logo} src={viewButton} alt="comment button" />
-      <a href={getNewsletterApi().downloadLink} target="_blank"><img className={Styles.logo} src={downloadButton} alt="download button" onClick={onClickDownload}/></a>
+      <a href={getNewsletterApi().downloadLink} target="_blank" rel="noreferrer"><img className={Styles.logo} src={downloadButton} alt="download button" onClick={onClickDownload}/></a>
       </div>
 
       <div className={Styles.counts}>

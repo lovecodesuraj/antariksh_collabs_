@@ -31,7 +31,7 @@ p {
   display: flex;
 }
 
-p i:not(:first-child){
+p .icon:not(:first-child){
   padding-left: 2rem;
 }
 
